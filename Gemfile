@@ -45,9 +45,15 @@ gem 'avatar_magick', '~> 1.0.1'
 
 gem 'bootstrap-sass'
 gem "haml-rails"
+
+gem 'activeadmin', '~> 1.0.0.pre5'
+gem 'inherited_resources', '~> 1.7'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :development do

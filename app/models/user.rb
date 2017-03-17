@@ -7,4 +7,9 @@ class User < ApplicationRecord
   include Avatarable
 
   dragonfly_accessor :image
+
+  belongs_to :role
+
+  validates_presence_of :full_name
+  
 end
